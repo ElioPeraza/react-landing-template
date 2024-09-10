@@ -10,7 +10,7 @@ function CardSmall() {
         padding: '0',   
         border: 'rounded'  
       }}>
-      <Card.Img variant="top" src= "../assets/img/carta.jpg" style={{ width: '100%', height: '325px', objectFit: 'cover' }} />
+      <Card.Img  className="img-fluid" variant="top" src="http://placehold.it/500x325"  alt="foto Foto.png " />
       <Card.Body style={{ padding: '50' }}>
         <Card.Title style={{ margin: '70', textAlign: 'center' }}>Card Title</Card.Title>
         <Card.Text style={{ margin: '70', textAlign: 'center' }}>

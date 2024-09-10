@@ -38,7 +38,7 @@ const App = () => {
           </Row>
         </section>
         </Container>
-        <div style={{ textAlign: 'center',  }}>
+        <div >
           <Myfooter/>
         </div>
       </div>
