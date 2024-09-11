@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import MyNavbar from './Navbar';
-import CardBig from './Card';
-import CardSmall from './CardLittle';
+import MyNavbar from './MyNavbar';
+import CardBig from './CardBig';
+import CardSmall from './CardSmall';
 import { Container, Row, Col } from 'react-bootstrap';
-import Myfooter from './footer';
+import Myfooter from './Myfooter';
 
 
 
@@ -21,25 +21,52 @@ const App = () => {
         </section>
 
         <Container fluid >
-        <section className='rounded m-5'>
-          <Row className="g-4">
-          <Col xs={12} sm={6} md={1} lg={3}>
-          <CardSmall />
+        <section >
+          <Row className="g-4 m-4">
+          <Col xs={12} sm={6} md={6} lg={3} style={{ marginBottom: 20, padding: 0, display: 'flex', justifyContent: 'center' ,alignItems: 'center'}}>
+          <CardSmall 
+          img= "http://placehold.it/800x250" 
+          title= " Titulo N°1" 
+          texto=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Officia, labore! Quasi molestias sit fugit cupiditate commodi 
+          quos amet deserunt at saepe," 
+          />
+
           </Col>
-          <Col xs={12} sm={6} md={1} lg={3}>
-          <CardSmall />
+          <Col xs={12} sm={6} md={6} lg={3} style={{ marginBottom: 20, padding: 0, display: 'flex', justifyContent: 'center' ,alignItems: 'center'}}>
+          <CardSmall 
+            img= "http://placehold.it/550x250" 
+            title= " Titulo N°2" 
+            texto=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, labore! "
+          />
+
           </Col>
-          <Col xs={12} sm={6} md={1} lg={3}>
-          <CardSmall />
+          <Col xs={12} sm={6} md={6} lg={3} style={{ marginBottom: 20, padding: 0, display: 'flex', justifyContent: 'center' ,alignItems: 'center'}}>
+          <CardSmall 
+          img= "http://placehold.it/450x250" 
+          title= " Titulo N°3" 
+          texto=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Officia, labore! Quasi molestias sit fugit cupiditate commodi 
+          quos amet deserunt at saepe, natus rem id distinctio quia error 
+          pariatur voluptatum nostrum."
+          />
+
           </Col>
-          <Col xs={12} sm={6} md={1} lg={3}>
-          <CardSmall />
+          <Col xs={12} sm={6} md={6} lg={3} style={{ marginBottom: 20, padding: 0, display: 'flex', justifyContent: 'center' ,alignItems: 'center'}}>
+          <CardSmall 
+          img= "http://placehold.it/350x200" 
+          title= " Titulo N°4" 
+          texto=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Officia, labore! Quasi molestias sit fugit cupiditate commodi 
+          quos amet" 
+          />
+
           </Col>
           </Row>
         </section>
         </Container>
         <div >
-          <Myfooter/>
+          <Myfooter className="mt-5"/>
         </div>
       </div>
     </div>
