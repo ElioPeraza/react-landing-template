@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+import "./index.css";
 function CardSmall(props) {
   return (
     <Card style= {{
@@ -11,9 +11,9 @@ function CardSmall(props) {
         border: 'rounded'  
       }}>
       <Card.Img variant="top" src={props.img} class="card-img-fluid" alt="" />
-      <Card.Body style={{ padding: '50' }}>
-        <Card.Title style={{textAlign: 'center' }}>{props.title}</Card.Title>
-        <Card.Text style={{textAlign: 'center',width: "300px", height: "150px" }}>{props.texto}</Card.Text>
+      <Card.Body className="d-flex flex-column justify-content-end align-items-center" >
+        <Card.Title >{props.title}</Card.Title>
+        <Card.Text style={{textAlign: 'center', minHeight:"250px" }}>{props.texto}</Card.Text>
         
       </Card.Body>
       <Card.Footer style={{ textAlign: 'center', backgroundColor: '#f8f9fa', }}>

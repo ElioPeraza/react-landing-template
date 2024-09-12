@@ -36,7 +36,7 @@ const App = () => {
           <Col xs={12} sm={6} md={6} lg={3} style={{ marginBottom: 20, padding: 0, display: 'flex', justifyContent: 'center' ,alignItems: 'center'}}>
           <CardSmall 
             img= "http://placehold.it/550x250" 
-            title= " Titulo N°2" 
+            title = " Titulo N°2" 
             texto=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, labore! "
           />
 
@@ -65,10 +65,11 @@ const App = () => {
           </Row>
         </section>
         </Container>
+        </div>
         <div >
           <Myfooter className="mt-5"/>
         </div>
-      </div>
+      
     </div>
 
   )
